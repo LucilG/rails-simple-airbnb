@@ -1,0 +1,51 @@
+<div class="a-diviser-en-2-colonnes">
+
+  <div class="cards-flat d-flex flex-column gap-3 m-20 p-5">
+    <div class="card bg-light">
+        <h5><%= @flat.name %></h5>
+        <p><%= @flat.address %></p>
+    </div>
+
+    <div class="card bg-light">
+        <h5>A bit more about this flat...</h5>
+        <p><%= @flat.description %></p>
+    </div>
+
+
+    <div class="card bg-light d-flex flex-column">
+        <h5>Details</h5>
+        <div class="subdetails ">
+          <div class="card-subdetails d-flex justify-content-left align-items-center gap-3">
+            <i class="fa-solid fa-users" style="color: #000000;"></i>
+            <p><%= @flat.price_per_night %></p>
+          </div>
+
+          <div class="card-subdetails d-flex justify-content-left align-items-center gap-3">
+            <i class="fa-solid fa-euro-sign" style="color: #000000;"></i>
+            <p><%= @flat.number_of_guests %></p>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="card-book d-flex flex-column">
+    <div class="card bg-light m-5 p-5">
+      <p>Book this place!</p>
+      <p>To do</p>
+      <p>To do</p>
+      <p class="btn btn-success">Book now</p>
+    </div>
+
+    <div class="card bg-light m-5 p-5 d-flex flex-column gap-3">
+      <p>Share</p>
+      <div class="icones d-flex flex-row gap-3">
+        <i class="fa-brands fa-square-facebook" style="color: #000000;"></i>
+        <i class="fa-brands fa-square-twitter" style="color: #000000;"></i>
+        <i class="fa-brands fa-square-pinterest" style="color: #000000;"></i>
+        <i class="fa-solid fa-square-envelope" style="color: #000000;"></i>
+      </div>
+    </div>
+  </div>
+
+</div>
